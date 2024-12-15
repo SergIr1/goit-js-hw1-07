@@ -1,32 +1,30 @@
-class StringBuilder {
-  #value;
+const inputEl = document.querySelector('#name-input');
+const spanEl = document.querySelector('#name-output')
 
-  constructor(initialValue) {
-    this.#value = initialValue;
-  }
+const onInputText = () => {
 
-  getValue() {
-    return this.#value;
-  }
+    const inputValue = inputEl.value.trim();
 
-  padEnd(str) {
-    this.#value = `${this.#value}${str}`;
-  }
+    // ====================1 Запис=============================
 
-  padStart(str) {
-    this.#value = `${str}${this.#value}`;
-  }
+        if (inputValue === '') {
+        spanEl.textContent = "Anonymous";
+    } else {
+        spanEl.textContent = inputEl.value;
+    }
 
-  padBoth(str) {
-    this.#value = `${str}${this.#value}${str}`;
-  }
+    // ====================2 Запис=============================
+
+    // inputValue === '' ? spanEl.textContent = "Anonymous" : spanEl.textContent = inputEl.value;
+
+    // ====================3 Запис=============================
+
+    // switch (inputValue) {
+    //     case '': spanEl.textContent = "Anonymous";
+    //         break;
+    //     default: spanEl.textContent = inputEl.value;
+    // }
+
 }
 
-const builder = new StringBuilder(".");
-console.log(builder.getValue()); // "."
-builder.padStart("^");
-console.log(builder.getValue()); // "^."
-builder.padEnd("^");
-console.log(builder.getValue()); // "^.^"
-builder.padBoth("=");
-console.log(builder.getValue()); // "=^.^="
+inputEl.addEventListener('input', onInputText);

@@ -1,0 +1,321 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===============================Home-work 1=============================== */
+
+.categories-list {
+  max-width: 392px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.categories-title {
+    margin-bottom: 16px;
+
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+
+    color: #2e2f42;
+}
+
+.sub-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.categories-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 0px 0px 0px 16px;
+  outline: transparent;
+  color: #2e2f42;
+
+  transition: border 250ms linear;
+}
+
+.categories-input::placeholder{
+  font-size: 16px;
+  
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.categories-input:hover,
+.categories-input:focus {
+  border: 1px solid #000;
+}
+
+/* ===============================/Home-work 1=============================== */
+
+/* ===============================Home-work 2=============================== */
+
+.js-gallery {
+  display: flex;
+  flex-wrap: wrap;
+
+  column-gap: 24px;
+  row-gap: 48px;
+  max-width: 1128px;
+}
+
+.js-gallery-item {
+  width: calc((100% - 48px) / 3);
+}
+
+/* ===============================/Home-work 2=============================== */
+
+/* ===============================Home-work 3=============================== */
+
+.input-text-form {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+
+  outline: transparent;
+  transition: border 250ms linear;
+}
+
+.input-text-form:hover,
+.input-text-form:focus {
+  border: 1px solid #000;
+}
+.title-text-form {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* ===============================/Home-work 3=============================== */
+
+/* ===============================Home-work 4=============================== */
+
+.login-form {
+  max-width: 408px;
+  padding: 24px;
+}
+
+.js-login-form-label {
+  display: block;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.js-login-form-label:not(:first-child) {
+    margin-top: 8px;
+}
+
+.js-login-form-input {
+  width: 100%;
+  height: 40px;
+  margin-top: 8px;
+  padding: 0px 0px 0px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+
+  outline: transparent;
+  transition: border 250ms linear;
+}
+
+.js-login-form-input:hover,
+.js-login-form-input:focus {
+  border: 1px solid #000;
+}
+
+.js-login-form-btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 86px;
+  height: 40px;
+  margin-top: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: #4e75ff;
+
+  border: transparent;
+
+  transition: background-color 250ms linear;
+}
+
+.js-login-form-btn:hover,
+.js-login-form-btn:focus {
+  background-color: #6c8cff;
+}
+
+/* ===============================/Home-work 4=============================== */
+
+/* ===============================Home-work 5=============================== */
+.widget {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 345px;
+  padding: 100px 88px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget-text {
+  margin-bottom: 16px;
+
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.change-color {
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 148px;
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  border: none;
+  color: #fff;
+  background-color: #4e75ff;
+
+  transition: background-color 250ms linear;
+}
+
+.change-color:hover,
+.change-color:focus {
+  background-color: #6c8cff;
+}
+
+/* ===============================/Home-work 5=============================== */
+
+/* ===============================Home-work 6=============================== */
+.controls {
+  display: flex;
+  max-width: 486px;
+  padding: 32px;
+}
+
+.controls-input {
+  width: 100%;
+  height: 40px;
+  margin-right: 16px;
+  border: 1px solid #808080;
+  border-radius: 8px;
+  text-align: center;
+  outline: transparent;
+
+  transition: border 250ms linear;
+}
+
+.controls-input:hover,
+.controls-input:focus {
+  border: 1px solid #000;
+}
+
+.controls-create-btn {
+  min-width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  margin-right: 16px;
+  padding: 8px 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  border: none;
+  background-color: #4e75ff;
+
+  transition: background-color 250ms linear;
+}
+
+.controls-create-btn:hover,
+.controls-create-btn:hover {
+  background-color: #6c8cff;
+}
+
+.controls-destroy-btn {
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 120px;
+  height: 40px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+
+  border: none;
+  background-color: #ff4e4e;
+
+  transition: background-color 250ms linear;
+}
+
+.controls-destroy-btn:hover,
+.controls-destroy-btn:focus {
+  background-color: #ff7070;
+}
+
+/* ===============================/Home-work 6=============================== */
